@@ -1,0 +1,144 @@
+*{box-sizing:border-box}
+:root{--dark:#211812;--ink:#3b2920;--muted:#806756;--paper:#f8f1e8;--cream:#eee0cf;--gold:#b58b62;--line:rgba(58,38,26,.14)}
+html{scroll-behavior:smooth}body{margin:0;background:#211812;color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif}.page{max-width:760px;margin:auto;min-height:100vh;background:var(--paper);box-shadow:0 0 70px #0005}
+ .hero{height:610px;position:relative;overflow:hidden;text-align:center;padding:28px 20px;background:
+radial-gradient(circle at 50% 38%,#fffaf2 0,#f5e9d8 42%,#e5d1b8 100%)} .hero:after{content:"";position:absolute;inset:0;opacity:.075;pointer-events:none;background-image:
+radial-gradient(ellipse 11px 6px at 10% 17%,#553a29 0 32%,transparent 35%),
+radial-gradient(ellipse 8px 5px at 87% 21%,#553a29 0 32%,transparent 35%),
+radial-gradient(ellipse 10px 6px at 19% 76%,#553a29 0 32%,transparent 35%),
+radial-gradient(ellipse 9px 5px at 82% 73%,#553a29 0 32%,transparent 35%),
+radial-gradient(ellipse 8px 5px at 94% 52%,#553a29 0 32%,transparent 35%),
+radial-gradient(ellipse 9px 5px at 5% 54%,#553a29 0 32%,transparent 35%);
+filter:blur(.2px)}.rings{display:none}.r1{display:none}.r2{display:none}
+.topbar{position:relative;z-index:2;display:flex;justify-content:center;align-items:center;gap:10px;color:#8d6b4d;font-size:9px;letter-spacing:3px;direction:ltr}.topbar i{width:35px;height:1px;background:#b58b6280} .brand{position:relative;z-index:2;margin-top:62px} .logo-frame{width:min(74vw,320px);height:170px;margin:auto;display:grid;place-items:center;padding:5px;background:transparent;border:0;box-shadow:none} .logo{max-width:100%;max-height:155px;object-fit:contain;filter:drop-shadow(0 13px 20px rgba(64,42,27,.10))} .kicker{display:block;margin-top:27px;color:#a47a51;font-size:9px;font-weight:700;letter-spacing:4px;direction:ltr} h1{margin:10px 0 8px;font-family:"Playfair Display",Georgia,serif;font-size:34px;font-weight:700;letter-spacing:-.3px;color:#332219}  .brand p{margin:0;color:#806451;font-size:11px}.scroll-cue{position:absolute;z-index:2;bottom:23px;left:50%;transform:translateX(-50%);color:#8e6d51}.scroll-cue span{display:block;width:1px;height:29px;margin:auto;background:#b58b62}.scroll-cue small{font-size:8px;letter-spacing:3px;direction:ltr}
+main{padding:42px 19px 50px}.intro{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:23px}.label{color:var(--gold);font-size:8px;font-weight:700;letter-spacing:4px;direction:ltr} .intro h2{margin:6px 0 0;font-family:"Playfair Display",Georgia,serif;font-size:22px;color:#39271e}.intro p{margin:0;color:#967a65;font-size:10px;white-space:nowrap}.search{height:50px;display:flex;align-items:center;padding:0 14px;background:#fffaf5;border:1px solid var(--line)}.search b{color:var(--gold);font-size:25px;font-weight:400}.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0 9px;color:var(--ink);font-size:12px}.search input::placeholder{color:#a58f7d}.search button{border:0;background:none;color:#806350;font-size:23px;cursor:pointer}.status{height:22px;padding-top:6px;color:#9a806c;font-size:10px}.menu{border-top:1px solid var(--line)}.cat{border-bottom:1px solid var(--line)}.toggle{width:100%;min-height:96px;border:0;background:transparent;display:flex;align-items:center;justify-content:space-between;padding:12px 2px;cursor:pointer;text-align:right;transition:.25s}.toggle:hover{padding-right:8px}.catname{display:flex;align-items:center;gap:17px}.catname em{font-family:"Playfair Display",Georgia,serif;font-style:normal;color:#b49374;font-size:13px;min-width:24px;direction:ltr}.catname b{display:block;font-size:16px;font-weight:600;letter-spacing:-.2px}.catname small{display:block;margin-top:3px;color:#ad8c6c;font-size:8px;letter-spacing:2px;direction:ltr;text-align:right}.toggle>strong{width:36px;height:36px;display:grid;place-items:center;border:1px solid #b58b6255;font-size:17px;font-weight:400;color:#765642;transform:rotate(-45deg);transition:.3s}.toggle[aria-expanded=true]>strong{transform:rotate(135deg);background:#eee0d0}.panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}.panel>ul{overflow:hidden;min-height:0;margin:0;padding:0;list-style:none;opacity:0;transition:.2s}.toggle[aria-expanded=true]+.panel{grid-template-rows:1fr}.toggle[aria-expanded=true]+.panel>ul{padding:0 0 17px;opacity:1}.panel li{position:relative;padding:10px 27px 10px 0;border-top:1px solid #3a261a12;font-size:12px;color:#5c4638}.panel li:before{content:"";position:absolute;right:7px;top:50%;width:5px;height:5px;border-radius:50%;background:#d4b28c;transform:translateY(-50%)}.panel li[hidden]{display:none}.cat.hide{display:none}.cat.hit .toggle{background:#f1e5d8}.empty{text-align:center;padding:40px;color:#8c715d}.empty b,.empty span{display:block}.empty b{font-size:14px}.empty span{font-size:10px;margin-top:5px}footer{position:relative;text-align:center;padding:48px 20px 54px;background:#241a15;color:#eadbca;overflow:hidden}footer:before{content:"";position:absolute;width:260px;height:260px;border:1px solid #d8b9901c;border-radius:50%;left:50%;top:-165px;transform:translateX(-50%)}.footer-brand{position:relative;font:700 23px "Playfair Display",Georgia,serif;letter-spacing:5px;direction:ltr}.footer-brand span{color:#c7a078}footer p{margin:8px 0 20px;color:#bca692;font-size:10px}.mark{width:29px;height:29px;margin:auto;border:1px solid #d8b99080;border-radius:50%;display:grid;place-items:center;color:#c8a27b;font-family:Georgia,serif;font-size:12px}@media(max-width:500px){.hero{height:550px}.brand{margin-top:54px}.logo-frame{height:160px}.intro{display:block}.intro p{margin-top:8px}}
+
+
+
+/* ROAST CAFE — PRO FINAL v2 */
+
+/* More presence for the logo and headline */
+.logo-frame{margin-bottom:8px}
+.logo{width:min(310px,78vw);max-height:170px;object-fit:contain}
+.hero h1{
+  font-size:clamp(2rem,4.8vw,3.4rem);
+  line-height:1.12;
+  letter-spacing:-.035em;
+  margin:10px 0 12px;
+  font-weight:700;
+}
+.hero .subtitle{font-size:clamp(1rem,2vw,1.18rem);max-width:650px}
+
+/* Minimal café cup mark under the logo */
+.coffee-mark{position:relative;width:112px;height:50px;margin:0 auto 8px}
+.coffee-mark:before{content:"";position:absolute;left:10px;right:10px;bottom:7px;height:2px;background:rgba(181,139,98,.48);border-radius:99px}
+.coffee-mark span{position:absolute;left:30px;bottom:10px;width:50px;height:27px;border:2px solid #806756;border-top:0;border-radius:0 0 23px 23px}
+.coffee-mark span:before{content:"";position:absolute;left:5px;right:5px;top:-3px;height:2px;background:#806756;border-radius:99px}
+.coffee-mark i{position:absolute;left:78px;bottom:19px;width:14px;height:17px;border:2px solid #806756;border-left:0;border-radius:0 12px 12px 0}
+.coffee-mark b{position:absolute;left:44px;top:0;width:20px;height:13px;border-left:1.5px solid #b58b62;transform:rotate(18deg);border-radius:50%;opacity:.8}
+.coffee-mark b:after{content:"";position:absolute;left:9px;top:-3px;width:20px;height:13px;border-left:1.5px solid #b58b62;transform:rotate(-20deg);border-radius:50%}
+
+/* Subtle coffee beans throughout the page */
+body{
+  background:
+    radial-gradient(ellipse 12px 22px at 8% 14%, rgba(104,72,50,.065) 0 42%, transparent 45%),
+    radial-gradient(ellipse 10px 19px at 13% 16%, rgba(104,72,50,.045) 0 42%, transparent 45%),
+    radial-gradient(ellipse 12px 22px at 88% 24%, rgba(104,72,50,.06) 0 42%, transparent 45%),
+    radial-gradient(ellipse 10px 19px at 93% 27%, rgba(104,72,50,.045) 0 42%, transparent 45%),
+    radial-gradient(ellipse 13px 24px at 6% 67%, rgba(104,72,50,.05) 0 42%, transparent 45%),
+    radial-gradient(ellipse 10px 19px at 11% 70%, rgba(104,72,50,.035) 0 42%, transparent 45%),
+    radial-gradient(ellipse 12px 22px at 91% 76%, rgba(104,72,50,.05) 0 42%, transparent 45%),
+    radial-gradient(ellipse 10px 19px at 96% 79%, rgba(104,72,50,.035) 0 42%, transparent 45%),
+    #f8f1e8;
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.5;
+  background:
+    radial-gradient(ellipse 9px 17px at 27% 38%, rgba(104,72,50,.035) 0 42%, transparent 45%),
+    radial-gradient(ellipse 9px 17px at 73% 49%, rgba(104,72,50,.035) 0 42%, transparent 45%),
+    radial-gradient(ellipse 9px 17px at 34% 84%, rgba(104,72,50,.035) 0 42%, transparent 45%),
+    radial-gradient(ellipse 9px 17px at 67% 90%, rgba(104,72,50,.035) 0 42%, transparent 45%);
+  z-index:0;
+}
+
+/* Clean contact area */
+.contact-card{
+  position:relative;
+  z-index:1;
+  max-width:760px;
+  margin:30px auto 0;
+  padding:26px 18px 22px;
+  text-align:center;
+  border-top:1px solid rgba(181,139,98,.28);
+}
+.contact-title{
+  font-family:"Playfair Display",serif;
+  font-size:1.45rem;
+  color:#3b2920;
+  margin-bottom:9px;
+}
+.contact-address{
+  color:#806756;
+  font-size:.92rem;
+  line-height:2;
+  max-width:690px;
+  margin:0 auto 8px;
+}
+.contact-phone{
+  display:block;
+  width:max-content;
+  max-width:100%;
+  margin:5px auto 12px;
+  color:#3b2920;
+  text-decoration:none;
+  font-weight:600;
+}
+.instagram-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  color:#3b2920 !important;
+  text-decoration:none !important;
+  font-weight:600;
+  direction:ltr;
+}
+.instagram-link svg{
+  width:27px;
+  height:27px;
+  fill:none;
+  stroke:#806756;
+  stroke-width:1.7;
+}
+.instagram-link .ig-dot{fill:#806756;stroke:none}
+.instagram-link:hover svg{stroke:#b58b62}
+.instagram-link:hover .ig-dot{fill:#b58b62}
+
+/* Never show browser-default blue links */
+a{color:inherit}
+button,.category-title{color:#3b2920}
+
+@media(max-width:600px){
+  .logo{width:min(285px,84vw)}
+  .hero h1{font-size:clamp(2rem,9vw,2.8rem)}
+  .contact-address{font-size:.86rem}
+}
+
+/* ROAST CAFE — PRO FINAL v4 */
+.logo{width:min(360px,88vw);max-height:195px}
+.hero h1{
+  font-family:"Vazirmatn",sans-serif;
+  font-size:clamp(1.55rem,3.8vw,2.35rem);
+  line-height:1.25;
+  letter-spacing:-.025em;
+  font-weight:500;
+  margin:8px 0 10px;
+}
+@media(max-width:600px){
+  .logo{width:min(330px,90vw);max-height:180px}
+  .hero h1{font-size:clamp(1.5rem,7vw,2rem)}
+}
