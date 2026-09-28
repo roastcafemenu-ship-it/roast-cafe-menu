@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360">
+<g fill="none" stroke="#6f4d32" stroke-width="2.4" opacity=".24">
+<g transform="translate(45 55) rotate(-30)"><ellipse cx="0" cy="0" rx="15" ry="25"/><path d="M-5-20 C8-8 8 8 -5 20"/></g>
+<g transform="translate(290 70) rotate(24)"><ellipse cx="0" cy="0" rx="14" ry="23"/><path d="M-4-19 C8-6 8 6 -4 19"/></g>
+<g transform="translate(125 195) rotate(20)"><ellipse cx="0" cy="0" rx="13" ry="22"/><path d="M-4-18 C7-6 7 6 -4 18"/></g>
+<g transform="translate(305 285) rotate(-34)"><ellipse cx="0" cy="0" rx="12" ry="21"/><path d="M-4-17 C7-5 7 5 -4 17"/></g>
+<g transform="translate(38 315) rotate(40)"><ellipse cx="0" cy="0" rx="11" ry="19"/><path d="M-3-15 C6-5 6 5 -3 15"/></g>
+</g></svg>
